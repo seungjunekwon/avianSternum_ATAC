@@ -1,3 +1,5 @@
+#copy-paste to terminal with "RAW" mode!
+
 for sample in D1 D2 D3 V1 V2 V3
 do
     echo "Processing $sample ..."
