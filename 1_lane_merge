@@ -1,4 +1,4 @@
-#copy-paste to terminal with "RAW" mode!
+#copy in "Raw" mode when pasting to terminal!
 
 for sample in D1 D2 D3 V1 V2 V3
 do
