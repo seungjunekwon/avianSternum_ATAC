@@ -1,30 +1,20 @@
-(base) animaldevelopment@AnimalnoMac-Pro 01.RawData % for sample in C21 C22 C23 C31 C32 C33 E21 E22 E23 E31 E32 E33
+for sample in D1 D2 D3 V1 V2 V3
 do
     echo "Processing $sample ..."
 
-    cat ${sample}_RKDL260000551-1A_23L2YHLT4_L1_1.fq.gz \
-        ${sample}_RKDL260000551-1A_23L2YHLT4_L2_1.fq.gz \
-        > ${sample}_R1.fastq.gz
+    cat ${sample}_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz \
+        ${sample}_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz \
+        > ${sample}_R1.fq.gz
 
-    cat ${sample}_RKDL260000551-1A_23L2YHLT4_L1_2.fq.gz \
-        ${sample}_RKDL260000551-1A_23L2YHLT4_L2_2.fq.gz \
-        > ${sample}_R2.fastq.gz
+    cat ${sample}_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz \
+        ${sample}_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz \
+        > ${sample}_R2.fq.gz
 done
 
 echo "All merges completed"
-Processing C21 ...
-Processing C22 ...
-Processing C23 ...
-Processing C31 ...
-Processing C32 ...
-Processing C33 ...
-Processing E21 ...
-Processing E22 ...
-Processing E23 ...
-Processing E31 ...
-Processing E32 ...
-Processing E33 ...
-All merges completed
+
+--
+
 (base) animaldevelopment@AnimalnoMac-Pro 01.RawData % ls
 C21_R1.fastq.gz					E21_R1.fastq.gz
 C21_R2.fastq.gz					E21_R2.fastq.gz
