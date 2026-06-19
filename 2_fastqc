@@ -1,4 +1,4 @@
-fastqc -t 4 *R1.fastq.gz *R2.fastq.gz
+fastqc -t 4 *R1.fq.gz *R2.fq.gz
 
 
 #took about an hour
