@@ -1,0 +1,653 @@
+(atac_env) animaldevelopment@AnimalnoMac-Pro 01.RawData % fastqc -t 4 *R1.fastq.gz *R2.fastq.gz
+
+application/gzip
+
+application/gzip
+
+Started analysis of C21_R1.fastq.gz
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+application/gzip
+
+Started analysis of C22_R1.fastq.gz
+
+Started analysis of C23_R1.fastq.gz
+
+Started analysis of C31_R1.fastq.gz
+
+Approx 5% complete for C23_R1.fastq.gz
+
+Approx 5% complete for C22_R1.fastq.gz
+
+Approx 5% complete for C21_R1.fastq.gz
+
+Approx 5% complete for C31_R1.fastq.gz
+
+Approx 10% complete for C23_R1.fastq.gz
+
+Approx 10% complete for C22_R1.fastq.gz
+
+Approx 10% complete for C21_R1.fastq.gz
+
+Approx 15% complete for C23_R1.fastq.gz
+
+Approx 10% complete for C31_R1.fastq.gz
+
+Approx 15% complete for C22_R1.fastq.gz
+
+Approx 15% complete for C21_R1.fastq.gz
+
+Approx 20% complete for C23_R1.fastq.gz
+
+Approx 20% complete for C22_R1.fastq.gz
+
+Approx 15% complete for C31_R1.fastq.gz
+
+Approx 25% complete for C23_R1.fastq.gz
+
+Approx 20% complete for C21_R1.fastq.gz
+
+Approx 25% complete for C22_R1.fastq.gz
+
+Approx 30% complete for C23_R1.fastq.gz
+
+Approx 20% complete for C31_R1.fastq.gz
+
+Approx 25% complete for C21_R1.fastq.gz
+
+Approx 35% complete for C23_R1.fastq.gz
+
+Approx 30% complete for C22_R1.fastq.gz
+
+Approx 30% complete for C21_R1.fastq.gz
+
+Approx 40% complete for C23_R1.fastq.gz
+
+Approx 25% complete for C31_R1.fastq.gz
+
+Approx 35% complete for C22_R1.fastq.gz
+
+Approx 45% complete for C23_R1.fastq.gz
+
+Approx 35% complete for C21_R1.fastq.gz
+
+Approx 40% complete for C22_R1.fastq.gz
+
+Approx 30% complete for C31_R1.fastq.gz
+
+Approx 50% complete for C23_R1.fastq.gz
+
+Approx 40% complete for C21_R1.fastq.gz
+
+Approx 45% complete for C22_R1.fastq.gz
+
+Approx 55% complete for C23_R1.fastq.gz
+
+Approx 35% complete for C31_R1.fastq.gz
+
+Approx 50% complete for C22_R1.fastq.gz
+
+Approx 45% complete for C21_R1.fastq.gz
+
+Approx 60% complete for C23_R1.fastq.gz
+
+Approx 40% complete for C31_R1.fastq.gz
+
+Approx 55% complete for C22_R1.fastq.gz
+
+Approx 65% complete for C23_R1.fastq.gz
+
+Approx 50% complete for C21_R1.fastq.gz
+
+Approx 70% complete for C23_R1.fastq.gz
+
+Approx 60% complete for C22_R1.fastq.gz
+
+Approx 45% complete for C31_R1.fastq.gz
+
+Approx 55% complete for C21_R1.fastq.gz
+
+Approx 75% complete for C23_R1.fastq.gz
+
+Approx 65% complete for C22_R1.fastq.gz
+
+Approx 60% complete for C21_R1.fastq.gz
+
+Approx 50% complete for C31_R1.fastq.gz
+
+Approx 80% complete for C23_R1.fastq.gz
+
+Approx 70% complete for C22_R1.fastq.gz
+
+Approx 85% complete for C23_R1.fastq.gz
+
+Approx 65% complete for C21_R1.fastq.gz
+
+Approx 75% complete for C22_R1.fastq.gz
+
+Approx 55% complete for C31_R1.fastq.gz
+
+Approx 90% complete for C23_R1.fastq.gz
+
+Approx 70% complete for C21_R1.fastq.gz
+
+Approx 80% complete for C22_R1.fastq.gz
+
+Approx 95% complete for C23_R1.fastq.gz
+
+Approx 60% complete for C31_R1.fastq.gz
+
+Approx 75% complete for C21_R1.fastq.gz
+
+Approx 85% complete for C22_R1.fastq.gz
+
+Analysis complete for C23_R1.fastq.gz
+
+Started analysis of C32_R1.fastq.gz
+
+Approx 65% complete for C31_R1.fastq.gz
+
+Approx 80% complete for C21_R1.fastq.gz
+
+Approx 90% complete for C22_R1.fastq.gz
+
+Approx 95% complete for C22_R1.fastq.gz
+
+Approx 70% complete for C31_R1.fastq.gz
+
+Approx 85% complete for C21_R1.fastq.gz
+
+Approx 5% complete for C32_R1.fastq.gz
+
+Analysis complete for C22_R1.fastq.gz
+
+Started analysis of C33_R1.fastq.gz
+
+Approx 90% complete for C21_R1.fastq.gz
+
+Approx 75% complete for C31_R1.fastq.gz
+
+Approx 10% complete for C32_R1.fastq.gz
+
+Approx 95% complete for C21_R1.fastq.gz
+
+Approx 80% complete for C31_R1.fastq.gz
+
+Analysis complete for C21_R1.fastq.gz
+
+Approx 5% complete for C33_R1.fastq.gz
+
+Started analysis of E21_R1.fastq.gz
+
+Approx 15% complete for C32_R1.fastq.gz
+
+Approx 85% complete for C31_R1.fastq.gz
+
+Approx 5% complete for E21_R1.fastq.gz
+
+Approx 10% complete for E21_R1.fastq.gz
+
+Approx 15% complete for E21_R1.fastq.gz
+
+Approx 90% complete for C31_R1.fastq.gz
+
+Approx 10% complete for C33_R1.fastq.gz
+
+Approx 20% complete for C32_R1.fastq.gz
+
+Approx 20% complete for E21_R1.fastq.gz
+
+Approx 25% complete for E21_R1.fastq.gz
+
+Approx 95% complete for C31_R1.fastq.gz
+
+Approx 30% complete for E21_R1.fastq.gz
+
+Approx 25% complete for C32_R1.fastq.gz
+
+Approx 35% complete for E21_R1.fastq.gz
+
+Analysis complete for C31_R1.fastq.gz
+
+Approx 15% complete for C33_R1.fastq.gz
+
+Started analysis of E22_R1.fastq.gz
+
+Approx 40% complete for E21_R1.fastq.gz
+
+Approx 5% complete for E22_R1.fastq.gz
+
+Approx 45% complete for E21_R1.fastq.gz
+
+Approx 30% complete for C32_R1.fastq.gz
+
+Approx 50% complete for E21_R1.fastq.gz
+
+Approx 10% complete for E22_R1.fastq.gz
+
+Approx 20% complete for C33_R1.fastq.gz
+
+Approx 55% complete for E21_R1.fastq.gz
+
+Approx 15% complete for E22_R1.fastq.gz
+
+Approx 60% complete for E21_R1.fastq.gz
+
+Approx 35% complete for C32_R1.fastq.gz
+
+Approx 20% complete for E22_R1.fastq.gz
+
+Approx 65% complete for E21_R1.fastq.gz
+
+Approx 70% complete for E21_R1.fastq.gz
+
+Approx 25% complete for E22_R1.fastq.gz
+
+Approx 25% complete for C33_R1.fastq.gz
+
+Approx 75% complete for E21_R1.fastq.gz
+
+Approx 30% complete for E22_R1.fastq.gz
+
+Approx 40% complete for C32_R1.fastq.gz
+
+Approx 80% complete for E21_R1.fastq.gz
+
+Approx 85% complete for E21_R1.fastq.gz
+
+Approx 35% complete for E22_R1.fastq.gz
+
+Approx 90% complete for E21_R1.fastq.gz
+
+Approx 30% complete for C33_R1.fastq.gz
+
+Approx 40% complete for E22_R1.fastq.gz
+
+Approx 45% complete for C32_R1.fastq.gz
+
+Approx 95% complete for E21_R1.fastq.gz
+
+Approx 45% complete for E22_R1.fastq.gz
+
+Analysis complete for E21_R1.fastq.gz
+
+Started analysis of E23_R1.fastq.gz
+
+Approx 50% complete for E22_R1.fastq.gz
+
+Approx 5% complete for E23_R1.fastq.gz
+
+Approx 50% complete for C32_R1.fastq.gz
+
+Approx 35% complete for C33_R1.fastq.gz
+
+Approx 55% complete for E22_R1.fastq.gz
+
+Approx 10% complete for E23_R1.fastq.gz
+
+Approx 60% complete for E22_R1.fastq.gz
+
+Approx 15% complete for E23_R1.fastq.gz
+
+Approx 55% complete for C32_R1.fastq.gz
+
+Approx 65% complete for E22_R1.fastq.gz
+
+Approx 20% complete for E23_R1.fastq.gz
+
+Approx 40% complete for C33_R1.fastq.gz
+
+Approx 70% complete for E22_R1.fastq.gz
+
+Approx 25% complete for E23_R1.fastq.gz
+
+Approx 60% complete for C32_R1.fastq.gz
+
+Approx 75% complete for E22_R1.fastq.gz
+
+Approx 30% complete for E23_R1.fastq.gz
+
+Approx 45% complete for C33_R1.fastq.gz
+
+Approx 80% complete for E22_R1.fastq.gz
+
+Approx 35% complete for E23_R1.fastq.gz
+
+Approx 65% complete for C32_R1.fastq.gz
+
+Approx 85% complete for E22_R1.fastq.gz
+
+Approx 40% complete for E23_R1.fastq.gz
+
+Approx 90% complete for E22_R1.fastq.gz
+
+Approx 45% complete for E23_R1.fastq.gz
+
+Approx 50% complete for C33_R1.fastq.gz
+
+Approx 70% complete for C32_R1.fastq.gz
+
+Approx 95% complete for E22_R1.fastq.gz
+
+Approx 50% complete for E23_R1.fastq.gz
+
+Analysis complete for E22_R1.fastq.gz
+
+Started analysis of E31_R1.fastq.gz
+
+Approx 55% complete for E23_R1.fastq.gz
+
+Approx 75% complete for C32_R1.fastq.gz
+
+Approx 55% complete for C33_R1.fastq.gz
+
+Approx 60% complete for E23_R1.fastq.gz
+
+Approx 5% complete for E31_R1.fastq.gz
+
+Approx 65% complete for E23_R1.fastq.gz
+
+Approx 10% complete for E31_R1.fastq.gz
+
+Approx 80% complete for C32_R1.fastq.gz
+
+Approx 70% complete for E23_R1.fastq.gz
+
+Approx 60% complete for C33_R1.fastq.gz
+
+Approx 15% complete for E31_R1.fastq.gz
+
+Approx 75% complete for E23_R1.fastq.gz
+
+Approx 85% complete for C32_R1.fastq.gz
+
+Approx 80% complete for E23_R1.fastq.gz
+
+Approx 20% complete for E31_R1.fastq.gz
+
+Approx 85% complete for E23_R1.fastq.gz
+
+Approx 65% complete for C33_R1.fastq.gz
+
+Approx 25% complete for E31_R1.fastq.gz
+
+Approx 90% complete for E23_R1.fastq.gz
+
+Approx 90% complete for C32_R1.fastq.gz
+
+Approx 30% complete for E31_R1.fastq.gz
+
+Approx 95% complete for E23_R1.fastq.gz
+
+Approx 70% complete for C33_R1.fastq.gz
+
+Approx 35% complete for E31_R1.fastq.gz
+
+Analysis complete for E23_R1.fastq.gz
+
+Started analysis of E32_R1.fastq.gz
+
+Approx 95% complete for C32_R1.fastq.gz
+
+Approx 5% complete for E32_R1.fastq.gz
+
+Approx 40% complete for E31_R1.fastq.gz
+
+Approx 10% complete for E32_R1.fastq.gz
+
+Analysis complete for C32_R1.fastq.gz
+
+Started analysis of E33_R1.fastq.gz
+
+Approx 75% complete for C33_R1.fastq.gz
+
+Approx 15% complete for E32_R1.fastq.gz
+
+Approx 45% complete for E31_R1.fastq.gz
+
+Approx 20% complete for E32_R1.fastq.gz
+
+Approx 5% complete for E33_R1.fastq.gz
+
+Approx 50% complete for E31_R1.fastq.gz
+
+Approx 25% complete for E32_R1.fastq.gz
+
+Approx 10% complete for E33_R1.fastq.gz
+
+Approx 80% complete for C33_R1.fastq.gz
+
+Approx 30% complete for E32_R1.fastq.gz
+
+Approx 55% complete for E31_R1.fastq.gz
+
+Approx 35% complete for E32_R1.fastq.gz
+
+Approx 15% complete for E33_R1.fastq.gz
+
+Approx 60% complete for E31_R1.fastq.gz
+
+Approx 40% complete for E32_R1.fastq.gz
+
+Approx 20% complete for E33_R1.fastq.gz
+
+Approx 45% complete for E32_R1.fastq.gz
+
+Approx 85% complete for C33_R1.fastq.gz
+
+Approx 65% complete for E31_R1.fastq.gz
+
+Approx 50% complete for E32_R1.fastq.gz
+
+Approx 25% complete for E33_R1.fastq.gz
+
+Approx 70% complete for E31_R1.fastq.gz
+
+Approx 55% complete for E32_R1.fastq.gz
+
+Approx 30% complete for E33_R1.fastq.gz
+
+Approx 60% complete for E32_R1.fastq.gz
+
+Approx 90% complete for C33_R1.fastq.gz
+
+Approx 75% complete for E31_R1.fastq.gz
+
+Approx 65% complete for E32_R1.fastq.gz
+
+Approx 35% complete for E33_R1.fastq.gz
+
+Approx 70% complete for E32_R1.fastq.gz
+
+Approx 80% complete for E31_R1.fastq.gz
+
+Approx 75% complete for E32_R1.fastq.gz
+
+Approx 40% complete for E33_R1.fastq.gz
+
+Approx 95% complete for C33_R1.fastq.gz
+
+Approx 85% complete for E31_R1.fastq.gz
+
+Approx 80% complete for E32_R1.fastq.gz
+
+Approx 45% complete for E33_R1.fastq.gz
+
+Approx 85% complete for E32_R1.fastq.gz
+
+Approx 90% complete for E31_R1.fastq.gz
+
+Approx 90% complete for E32_R1.fastq.gz
+
+Approx 50% complete for E33_R1.fastq.gz
+
+Analysis complete for C33_R1.fastq.gz
+
+Started analysis of C21_R2.fastq.gz
+
+Approx 95% complete for E31_R1.fastq.gz
+
+Approx 95% complete for E32_R1.fastq.gz
+
+Approx 55% complete for E33_R1.fastq.gz
+
+Approx 5% complete for C21_R2.fastq.gz
+
+Analysis complete for E32_R1.fastq.gz
+
+Started analysis of C22_R2.fastq.gz
+
+Analysis complete for E31_R1.fastq.gz
+
+Started analysis of C23_R2.fastq.gz
+
+Approx 60% complete for E33_R1.fastq.gz
+
+Approx 10% complete for C21_R2.fastq.gz
+
+Approx 5% complete for C22_R2.fastq.gz
+
+Approx 5% complete for C23_R2.fastq.gz
+
+Approx 10% complete for C23_R2.fastq.gz
+
+Approx 10% complete for C22_R2.fastq.gz
+
+Approx 15% complete for C21_R2.fastq.gz
+
+Approx 65% complete for E33_R1.fastq.gz
+
+Approx 15% complete for C23_R2.fastq.gz
+
+Approx 15% complete for C22_R2.fastq.gz
+
+Approx 20% complete for C21_R2.fastq.gz
+
+Approx 70% complete for E33_R1.fastq.gz
+
+Approx 20% complete for C23_R2.fastq.gz
+
+Approx 20% complete for C22_R2.fastq.gz
+
+Approx 25% complete for C21_R2.fastq.gz
+
+Approx 25% complete for C23_R2.fastq.gz
+
+Approx 75% complete for E33_R1.fastq.gz
+
+Approx 25% complete for C22_R2.fastq.gz
+
+Approx 30% complete for C23_R2.fastq.gz
+
+Approx 30% complete for C21_R2.fastq.gz
+
+Approx 80% complete for E33_R1.fastq.gz
+
+Approx 30% complete for C22_R2.fastq.gz
+
+Approx 35% complete for C23_R2.fastq.gz
+
+Approx 35% complete for C21_R2.fastq.gz
+
+Approx 40% complete for C23_R2.fastq.gz
+
+Approx 35% complete for C22_R2.fastq.gz
+
+Approx 85% complete for E33_R1.fastq.gz
+
+Approx 40% complete for C21_R2.fastq.gz
+
+Approx 45% complete for C23_R2.fastq.gz
+
+Approx 40% complete for C22_R2.fastq.gz
+
+Approx 90% complete for E33_R1.fastq.gz
+
+Approx 50% complete for C23_R2.fastq.gz
+
+Approx 45% complete for C21_R2.fastq.gz
+
+Approx 45% complete for C22_R2.fastq.gz
+
+Approx 55% complete for C23_R2.fastq.gz
+
+Approx 95% complete for E33_R1.fastq.gz
+
+Approx 50% complete for C21_R2.fastq.gz
+
+Approx 50% complete for C22_R2.fastq.gz
+
+Approx 60% complete for C23_R2.fastq.gz
+
+Analysis complete for E33_R1.fastq.gz
+
+Started analysis of C31_R2.fastq.gz
+
+Approx 55% complete for C21_R2.fastq.gz
+
+Approx 55% complete for C22_R2.fastq.gz
+
+Approx 65% complete for C23_R2.fastq.gz
+
+Approx 60% complete for C22_R2.fastq.gz
+
+Approx 70% complete for C23_R2.fastq.gz
+
+Approx 60% complete for C21_R2.fastq.gz
+
+Approx 5% complete for C31_R2.fastq.gz
+
+Approx 75% complete for C23_R2.fastq.gz
+
+Approx 65% complete for C22_R2.fastq.gz
+
+Approx 65% complete for C21_R2.fastq.gz
+
+Approx 10% complete for C31_R2.fastq.gz
+
+Approx 80% complete for C23_R2.fastq.gz
+
+#took about an hour
+
+#caffeinate -dimsu fastqc -t 6 -o ./Post_QC *_trim_R1.fastq.gz *_trim_R2.fastq.gz
