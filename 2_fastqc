@@ -1,0 +1,6 @@
+fastqc -t 4 *R1.fastq.gz *R2.fastq.gz
+
+
+#took about an hour
+
+#caffeinate -dimsu fastqc -t 6 -o ./Post_QC *_trim_R1.fastq.gz *_trim_R2.fastq.gz
