@@ -2,6 +2,8 @@ conda activate atac_env
 
 fastqc -t 4 *R1.fq.gz *R2.fq.gz
 
+multiqc .
+
 
 #took about an hour
 
