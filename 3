@@ -1,4 +1,4 @@
-caffeinate -dimsu fastqc -t 6 -o ./Post_QC *_trim_R1.fastq.gz *_trim_R2.fastq.gz
+conda activate atac_env
 
 caffeinate -dimsu bash -c '
 for sample in D1 D2 D3 V1 V2 V3
@@ -15,3 +15,636 @@ do
     -j ../02.TrimmedData/${sample}_fastp.json
 done
 '
+
+
+#actual result of terminal (260620Sat 14:29 checked)
+
+(base) animaldevelopment@AnimalnoMac-Pro 01.RawData % conda activate atac_env
+(atac_env) animaldevelopment@AnimalnoMac-Pro 01.RawData % fastqc -t 4 *R1.fq.gz *R2.fq.gz
+application/gzip
+application/gzip
+Started analysis of D1_R1.fq.gz
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+application/gzip
+Started analysis of D2_R1.fq.gz
+Started analysis of D3_R1.fq.gz
+Started analysis of V1_R1.fq.gz
+Approx 5% complete for D3_R1.fq.gz
+Approx 5% complete for V1_R1.fq.gz
+Approx 5% complete for D2_R1.fq.gz
+Approx 5% complete for D1_R1.fq.gz
+Approx 10% complete for D3_R1.fq.gz
+Approx 10% complete for V1_R1.fq.gz
+Approx 10% complete for D2_R1.fq.gz
+Approx 10% complete for D1_R1.fq.gz
+Approx 15% complete for D3_R1.fq.gz
+Approx 15% complete for V1_R1.fq.gz
+Approx 15% complete for D2_R1.fq.gz
+Approx 20% complete for D3_R1.fq.gz
+Approx 15% complete for D1_R1.fq.gz
+Approx 20% complete for V1_R1.fq.gz
+Approx 25% complete for D3_R1.fq.gz
+Approx 20% complete for D2_R1.fq.gz
+Approx 20% complete for D1_R1.fq.gz
+Approx 25% complete for V1_R1.fq.gz
+Approx 30% complete for D3_R1.fq.gz
+Approx 25% complete for D2_R1.fq.gz
+Approx 30% complete for V1_R1.fq.gz
+Approx 35% complete for D3_R1.fq.gz
+Approx 25% complete for D1_R1.fq.gz
+Approx 35% complete for V1_R1.fq.gz
+Approx 30% complete for D2_R1.fq.gz
+Approx 40% complete for D3_R1.fq.gz
+Approx 30% complete for D1_R1.fq.gz
+Approx 45% complete for D3_R1.fq.gz
+Approx 40% complete for V1_R1.fq.gz
+Approx 35% complete for D2_R1.fq.gz
+Approx 35% complete for D1_R1.fq.gz
+Approx 50% complete for D3_R1.fq.gz
+Approx 45% complete for V1_R1.fq.gz
+Approx 40% complete for D2_R1.fq.gz
+Approx 55% complete for D3_R1.fq.gz
+Approx 40% complete for D1_R1.fq.gz
+Approx 50% complete for V1_R1.fq.gz
+Approx 60% complete for D3_R1.fq.gz
+Approx 45% complete for D2_R1.fq.gz
+Approx 55% complete for V1_R1.fq.gz
+Approx 45% complete for D1_R1.fq.gz
+Approx 65% complete for D3_R1.fq.gz
+Approx 50% complete for D2_R1.fq.gz
+Approx 60% complete for V1_R1.fq.gz
+Approx 70% complete for D3_R1.fq.gz
+Approx 50% complete for D1_R1.fq.gz
+Approx 65% complete for V1_R1.fq.gz
+Approx 55% complete for D2_R1.fq.gz
+Approx 75% complete for D3_R1.fq.gz
+Approx 55% complete for D1_R1.fq.gz
+Approx 70% complete for V1_R1.fq.gz
+Approx 80% complete for D3_R1.fq.gz
+Approx 60% complete for D2_R1.fq.gz
+Approx 75% complete for V1_R1.fq.gz
+Approx 60% complete for D1_R1.fq.gz
+Approx 85% complete for D3_R1.fq.gz
+Approx 65% complete for D2_R1.fq.gz
+Approx 80% complete for V1_R1.fq.gz
+Approx 90% complete for D3_R1.fq.gz
+Approx 65% complete for D1_R1.fq.gz
+Approx 70% complete for D2_R1.fq.gz
+Approx 95% complete for D3_R1.fq.gz
+Approx 85% complete for V1_R1.fq.gz
+Approx 70% complete for D1_R1.fq.gz
+Analysis complete for D3_R1.fq.gz
+Approx 75% complete for D2_R1.fq.gz
+Started analysis of V2_R1.fq.gz
+Approx 90% complete for V1_R1.fq.gz
+Approx 95% complete for V1_R1.fq.gz
+Approx 75% complete for D1_R1.fq.gz
+Approx 80% complete for D2_R1.fq.gz
+Approx 5% complete for V2_R1.fq.gz
+Analysis complete for V1_R1.fq.gz
+Started analysis of V3_R1.fq.gz
+Approx 80% complete for D1_R1.fq.gz
+Approx 5% complete for V3_R1.fq.gz
+Approx 85% complete for D2_R1.fq.gz
+Approx 10% complete for V2_R1.fq.gz
+Approx 10% complete for V3_R1.fq.gz
+Approx 85% complete for D1_R1.fq.gz
+Approx 15% complete for V3_R1.fq.gz
+Approx 90% complete for D2_R1.fq.gz
+Approx 15% complete for V2_R1.fq.gz
+Approx 20% complete for V3_R1.fq.gz
+Approx 90% complete for D1_R1.fq.gz
+Approx 25% complete for V3_R1.fq.gz
+Approx 95% complete for D2_R1.fq.gz
+Approx 20% complete for V2_R1.fq.gz
+Approx 30% complete for V3_R1.fq.gz
+Approx 35% complete for V3_R1.fq.gz
+Approx 95% complete for D1_R1.fq.gz
+Analysis complete for D2_R1.fq.gz
+Started analysis of D1_R2.fq.gz
+Approx 25% complete for V2_R1.fq.gz
+Approx 40% complete for V3_R1.fq.gz
+Approx 45% complete for V3_R1.fq.gz
+Analysis complete for D1_R1.fq.gz
+Started analysis of D2_R2.fq.gz
+Approx 5% complete for D1_R2.fq.gz
+Approx 50% complete for V3_R1.fq.gz
+Approx 30% complete for V2_R1.fq.gz
+Approx 55% complete for V3_R1.fq.gz
+Approx 5% complete for D2_R2.fq.gz
+Approx 10% complete for D1_R2.fq.gz
+Approx 60% complete for V3_R1.fq.gz
+Approx 35% complete for V2_R1.fq.gz
+Approx 65% complete for V3_R1.fq.gz
+Approx 10% complete for D2_R2.fq.gz
+Approx 15% complete for D1_R2.fq.gz
+Approx 70% complete for V3_R1.fq.gz
+Approx 40% complete for V2_R1.fq.gz
+Approx 75% complete for V3_R1.fq.gz
+Approx 15% complete for D2_R2.fq.gz
+Approx 20% complete for D1_R2.fq.gz
+Approx 80% complete for V3_R1.fq.gz
+Approx 85% complete for V3_R1.fq.gz
+Approx 45% complete for V2_R1.fq.gz
+Approx 20% complete for D2_R2.fq.gz
+Approx 25% complete for D1_R2.fq.gz
+Approx 90% complete for V3_R1.fq.gz
+Approx 95% complete for V3_R1.fq.gz
+Approx 25% complete for D2_R2.fq.gz
+Approx 50% complete for V2_R1.fq.gz
+Approx 30% complete for D1_R2.fq.gz
+Analysis complete for V3_R1.fq.gz
+Started analysis of D3_R2.fq.gz
+Approx 30% complete for D2_R2.fq.gz
+Approx 5% complete for D3_R2.fq.gz
+Approx 55% complete for V2_R1.fq.gz
+Approx 35% complete for D1_R2.fq.gz
+Approx 10% complete for D3_R2.fq.gz
+Approx 35% complete for D2_R2.fq.gz
+Approx 60% complete for V2_R1.fq.gz
+Approx 40% complete for D1_R2.fq.gz
+Approx 15% complete for D3_R2.fq.gz
+Approx 40% complete for D2_R2.fq.gz
+Approx 45% complete for D1_R2.fq.gz
+Approx 65% complete for V2_R1.fq.gz
+Approx 20% complete for D3_R2.fq.gz
+Approx 45% complete for D2_R2.fq.gz
+Approx 25% complete for D3_R2.fq.gz
+Approx 50% complete for D1_R2.fq.gz
+Approx 70% complete for V2_R1.fq.gz
+Approx 30% complete for D3_R2.fq.gz
+Approx 50% complete for D2_R2.fq.gz
+Approx 55% complete for D1_R2.fq.gz
+Approx 75% complete for V2_R1.fq.gz
+Approx 35% complete for D3_R2.fq.gz
+Approx 55% complete for D2_R2.fq.gz
+Approx 40% complete for D3_R2.fq.gz
+Approx 60% complete for D1_R2.fq.gz
+Approx 80% complete for V2_R1.fq.gz
+Approx 60% complete for D2_R2.fq.gz
+Approx 45% complete for D3_R2.fq.gz
+Approx 65% complete for D1_R2.fq.gz
+Approx 85% complete for V2_R1.fq.gz
+Approx 50% complete for D3_R2.fq.gz
+Approx 65% complete for D2_R2.fq.gz
+Approx 70% complete for D1_R2.fq.gz
+Approx 55% complete for D3_R2.fq.gz
+Approx 70% complete for D2_R2.fq.gz
+Approx 90% complete for V2_R1.fq.gz
+Approx 60% complete for D3_R2.fq.gz
+Approx 75% complete for D1_R2.fq.gz
+Approx 75% complete for D2_R2.fq.gz
+Approx 65% complete for D3_R2.fq.gz
+Approx 95% complete for V2_R1.fq.gz
+Approx 80% complete for D1_R2.fq.gz
+Approx 70% complete for D3_R2.fq.gz
+Approx 80% complete for D2_R2.fq.gz
+Analysis complete for V2_R1.fq.gz
+Started analysis of V1_R2.fq.gz
+Approx 85% complete for D1_R2.fq.gz
+Approx 75% complete for D3_R2.fq.gz
+Approx 85% complete for D2_R2.fq.gz
+Approx 5% complete for V1_R2.fq.gz
+Approx 80% complete for D3_R2.fq.gz
+Approx 90% complete for D1_R2.fq.gz
+Approx 90% complete for D2_R2.fq.gz
+Approx 10% complete for V1_R2.fq.gz
+Approx 85% complete for D3_R2.fq.gz
+Approx 95% complete for D1_R2.fq.gz
+Approx 90% complete for D3_R2.fq.gz
+Approx 15% complete for V1_R2.fq.gz
+Approx 95% complete for D2_R2.fq.gz
+Approx 95% complete for D3_R2.fq.gz
+Analysis complete for D1_R2.fq.gz
+Started analysis of V2_R2.fq.gz
+Approx 20% complete for V1_R2.fq.gz
+Analysis complete for D2_R2.fq.gz
+Started analysis of V3_R2.fq.gz
+Analysis complete for D3_R2.fq.gz
+Approx 5% complete for V3_R2.fq.gz
+Approx 25% complete for V1_R2.fq.gz
+Approx 5% complete for V2_R2.fq.gz
+Approx 10% complete for V3_R2.fq.gz
+Approx 30% complete for V1_R2.fq.gz
+Approx 15% complete for V3_R2.fq.gz
+Approx 10% complete for V2_R2.fq.gz
+Approx 20% complete for V3_R2.fq.gz
+Approx 35% complete for V1_R2.fq.gz
+Approx 25% complete for V3_R2.fq.gz
+Approx 30% complete for V3_R2.fq.gz
+Approx 15% complete for V2_R2.fq.gz
+Approx 40% complete for V1_R2.fq.gz
+Approx 35% complete for V3_R2.fq.gz
+Approx 40% complete for V3_R2.fq.gz
+Approx 45% complete for V1_R2.fq.gz
+Approx 20% complete for V2_R2.fq.gz
+Approx 45% complete for V3_R2.fq.gz
+Approx 50% complete for V1_R2.fq.gz
+Approx 50% complete for V3_R2.fq.gz
+Approx 25% complete for V2_R2.fq.gz
+Approx 55% complete for V3_R2.fq.gz
+Approx 55% complete for V1_R2.fq.gz
+Approx 60% complete for V3_R2.fq.gz
+Approx 65% complete for V3_R2.fq.gz
+Approx 30% complete for V2_R2.fq.gz
+Approx 60% complete for V1_R2.fq.gz
+Approx 70% complete for V3_R2.fq.gz
+Approx 75% complete for V3_R2.fq.gz
+Approx 65% complete for V1_R2.fq.gz
+Approx 35% complete for V2_R2.fq.gz
+Approx 80% complete for V3_R2.fq.gz
+Approx 70% complete for V1_R2.fq.gz
+Approx 85% complete for V3_R2.fq.gz
+Approx 40% complete for V2_R2.fq.gz
+Approx 90% complete for V3_R2.fq.gz
+Approx 75% complete for V1_R2.fq.gz
+Approx 95% complete for V3_R2.fq.gz
+Analysis complete for V3_R2.fq.gz
+Approx 45% complete for V2_R2.fq.gz
+Approx 80% complete for V1_R2.fq.gz
+Approx 85% complete for V1_R2.fq.gz
+Approx 50% complete for V2_R2.fq.gz
+Approx 90% complete for V1_R2.fq.gz
+Approx 55% complete for V2_R2.fq.gz
+Approx 95% complete for V1_R2.fq.gz
+Approx 60% complete for V2_R2.fq.gz
+Analysis complete for V1_R2.fq.gz
+Approx 65% complete for V2_R2.fq.gz
+Approx 70% complete for V2_R2.fq.gz
+Approx 75% complete for V2_R2.fq.gz
+Approx 80% complete for V2_R2.fq.gz
+Approx 85% complete for V2_R2.fq.gz
+Approx 90% complete for V2_R2.fq.gz
+Approx 95% complete for V2_R2.fq.gz
+Analysis complete for V2_R2.fq.gz
+(atac_env) animaldevelopment@AnimalnoMac-Pro 01.RawData % caffeinate -dimsu bash -c '
+for sample in D1 D2 D3 V1 V2 V3
+do
+  fastp \
+    -i ${sample}_R1.fq.gz \
+    -I ${sample}_R2.fq.gz \
+    -o ../02.TrimmedData/${sample}_trim_R1.fastq.gz \
+    -O ../02.TrimmedData/${sample}_trim_R2.fastq.gz \
+    --detect_adapter_for_pe \
+    -w 8 \
+    -t 6 \
+    -h ../02.TrimmedData/${sample}_fastp.html \
+    -j ../02.TrimmedData/${sample}_fastp.json
+done
+'
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 58932429
+total bases: 8839864350
+Q20 bases: 8174108773(92.4687%)
+Q30 bases: 7376572739(83.4467%)
+Q40 bases: 7376572739(83.4467%)
+
+Read2 before filtering:
+total reads: 58932429
+total bases: 8839864350
+Q20 bases: 8756657383(99.0587%)
+Q30 bases: 8577121375(97.0277%)
+Q40 bases: 8577121375(97.0277%)
+
+Read1 after filtering:
+total reads: 58420108
+total bases: 5449670464
+Q20 bases: 5418602325(99.4299%)
+Q30 bases: 5299644305(97.2471%)
+Q40 bases: 5299644305(97.2471%)
+
+Read2 after filtering:
+total reads: 58420108
+total bases: 5450288879
+Q20 bases: 5425316364(99.5418%)
+Q30 bases: 5341407571(98.0023%)
+Q40 bases: 5341407571(98.0023%)
+
+Filtering result:
+reads passed filter: 116840216
+reads failed due to low quality: 575750
+reads failed due to too many N: 42366
+reads failed due to too short: 406138
+reads failed due to adapter dimer: 388
+reads with adapter trimmed: 82801579
+bases trimmed due to adapters: 5106373147
+
+Duplication rate: 3.1682%
+
+Insert size peak (evaluated by paired-end reads): 47
+
+JSON report: ../02.TrimmedData/D1_fastp.json
+HTML report: ../02.TrimmedData/D1_fastp.html
+
+fastp -i D1_R1.fq.gz -I D1_R2.fq.gz -o ../02.TrimmedData/D1_trim_R1.fastq.gz -O ../02.TrimmedData/D1_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/D1_fastp.html -j ../02.TrimmedData/D1_fastp.json 
+fastp v1.3.1, time used: 189 seconds
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 56141482
+total bases: 8421222300
+Q20 bases: 7872005400(93.4782%)
+Q30 bases: 7223315479(85.7751%)
+Q40 bases: 7223315479(85.7751%)
+
+Read2 before filtering:
+total reads: 56141482
+total bases: 8421222300
+Q20 bases: 8331280654(98.932%)
+Q30 bases: 8133824427(96.5872%)
+Q40 bases: 8133824427(96.5872%)
+
+Read1 after filtering:
+total reads: 55601663
+total bases: 5502831903
+Q20 bases: 5477372299(99.5373%)
+Q30 bases: 5382896744(97.8205%)
+Q40 bases: 5382896744(97.8205%)
+
+Read2 after filtering:
+total reads: 55601663
+total bases: 5503109075
+Q20 bases: 5472301090(99.4402%)
+Q30 bases: 5371178135(97.6026%)
+Q40 bases: 5371178135(97.6026%)
+
+Filtering result:
+reads passed filter: 111203326
+reads failed due to low quality: 629710
+reads failed due to too many N: 43388
+reads failed due to too short: 406028
+reads failed due to adapter dimer: 512
+reads with adapter trimmed: 74095019
+bases trimmed due to adapters: 4390078415
+
+Duplication rate: 4.08709%
+
+Insert size peak (evaluated by paired-end reads): 49
+
+JSON report: ../02.TrimmedData/D2_fastp.json
+HTML report: ../02.TrimmedData/D2_fastp.html
+
+fastp -i D2_R1.fq.gz -I D2_R2.fq.gz -o ../02.TrimmedData/D2_trim_R1.fastq.gz -O ../02.TrimmedData/D2_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/D2_fastp.html -j ../02.TrimmedData/D2_fastp.json 
+fastp v1.3.1, time used: 189 seconds
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 42754730
+total bases: 6413209500
+Q20 bases: 5916732368(92.2585%)
+Q30 bases: 5342822337(83.3096%)
+Q40 bases: 5342822337(83.3096%)
+
+Read2 before filtering:
+total reads: 42754730
+total bases: 6413209500
+Q20 bases: 6348869349(98.9968%)
+Q30 bases: 6209118287(96.8176%)
+Q40 bases: 6209118287(96.8176%)
+
+Read1 after filtering:
+total reads: 42438006
+total bases: 3829812960
+Q20 bases: 3812791499(99.5556%)
+Q30 bases: 3747836459(97.8595%)
+Q40 bases: 3747836459(97.8595%)
+
+Read2 after filtering:
+total reads: 42438006
+total bases: 3830192802
+Q20 bases: 3811543543(99.5131%)
+Q30 bases: 3747872840(97.8508%)
+Q40 bases: 3747872840(97.8508%)
+
+Filtering result:
+reads passed filter: 84876012
+reads failed due to low quality: 445462
+reads failed due to too many N: 30562
+reads failed due to too short: 157212
+reads failed due to adapter dimer: 212
+reads with adapter trimmed: 65459083
+bases trimmed due to adapters: 3981488566
+
+Duplication rate: 2.61099%
+
+Insert size peak (evaluated by paired-end reads): 49
+
+JSON report: ../02.TrimmedData/D3_fastp.json
+HTML report: ../02.TrimmedData/D3_fastp.html
+
+fastp -i D3_R1.fq.gz -I D3_R2.fq.gz -o ../02.TrimmedData/D3_trim_R1.fastq.gz -O ../02.TrimmedData/D3_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/D3_fastp.html -j ../02.TrimmedData/D3_fastp.json 
+fastp v1.3.1, time used: 130 seconds
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 46450899
+total bases: 6967634850
+Q20 bases: 6632626106(95.1919%)
+Q30 bases: 6156710602(88.3616%)
+Q40 bases: 6156710602(88.3616%)
+
+Read2 before filtering:
+total reads: 46450899
+total bases: 6967634850
+Q20 bases: 6903037464(99.0729%)
+Q30 bases: 6764353099(97.0825%)
+Q40 bases: 6764353099(97.0825%)
+
+Read1 after filtering:
+total reads: 45976113
+total bases: 4778889228
+Q20 bases: 4752355829(99.4448%)
+Q30 bases: 4651332847(97.3308%)
+Q40 bases: 4651332847(97.3308%)
+
+Read2 after filtering:
+total reads: 45976113
+total bases: 4779262896
+Q20 bases: 4757708269(99.549%)
+Q30 bases: 4687478742(98.0795%)
+Q40 bases: 4687478742(98.0795%)
+
+Filtering result:
+reads passed filter: 91952226
+reads failed due to low quality: 448462
+reads failed due to too many N: 37048
+reads failed due to too short: 463704
+reads failed due to adapter dimer: 358
+reads with adapter trimmed: 57362585
+bases trimmed due to adapters: 3288118200
+
+Duplication rate: 4.97547%
+
+Insert size peak (evaluated by paired-end reads): 57
+
+JSON report: ../02.TrimmedData/V1_fastp.json
+HTML report: ../02.TrimmedData/V1_fastp.html
+
+fastp -i V1_R1.fq.gz -I V1_R2.fq.gz -o ../02.TrimmedData/V1_trim_R1.fastq.gz -O ../02.TrimmedData/V1_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/V1_fastp.html -j ../02.TrimmedData/V1_fastp.json 
+fastp v1.3.1, time used: 163 seconds
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 62716034
+total bases: 9407405100
+Q20 bases: 8869132816(94.2782%)
+Q30 bases: 8127152156(86.391%)
+Q40 bases: 8127152156(86.391%)
+
+Read2 before filtering:
+total reads: 62716034
+total bases: 9407405100
+Q20 bases: 9316537160(99.0341%)
+Q30 bases: 9124717434(96.9951%)
+Q40 bases: 9124717434(96.9951%)
+
+Read1 after filtering:
+total reads: 62213150
+total bases: 5875727258
+Q20 bases: 5850842855(99.5765%)
+Q30 bases: 5757961821(97.9957%)
+Q40 bases: 5757961821(97.9957%)
+
+Read2 after filtering:
+total reads: 62213150
+total bases: 5876289125
+Q20 bases: 5849830270(99.5497%)
+Q30 bases: 5761604932(98.0484%)
+Q40 bases: 5761604932(98.0484%)
+
+Filtering result:
+reads passed filter: 124426300
+reads failed due to low quality: 625360
+reads failed due to too many N: 46684
+reads failed due to too short: 332662
+reads failed due to adapter dimer: 1062
+reads with adapter trimmed: 91646292
+bases trimmed due to adapters: 5435008635
+
+Duplication rate: 3.97241%
+
+Insert size peak (evaluated by paired-end reads): 47
+
+JSON report: ../02.TrimmedData/V2_fastp.json
+HTML report: ../02.TrimmedData/V2_fastp.html
+
+fastp -i V2_R1.fq.gz -I V2_R2.fq.gz -o ../02.TrimmedData/V2_trim_R1.fastq.gz -O ../02.TrimmedData/V2_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/V2_fastp.html -j ../02.TrimmedData/V2_fastp.json 
+fastp v1.3.1, time used: 196 seconds
+Detecting adapter sequence for read1...
+>I7_Nextera_Transposase_1 | >Trans2_rc | >I7_Nextera_Transposase_1 | >Trans2_rc
+CTGTCTCTTATACACATCTCCGAGCCCACGAGAC
+
+Detecting adapter sequence for read2...
+>I5_Nextera_Transposase_1 | >Trans1_rc | >I5_Nextera_Transposase_1 | >Trans1_rc
+CTGTCTCTTATACACATCTGACGCTGCCGACGA
+
+Read1 before filtering:
+total reads: 27434189
+total bases: 4115128350
+Q20 bases: 3880396302(94.2959%)
+Q30 bases: 3560346123(86.5185%)
+Q40 bases: 3560346123(86.5185%)
+
+Read2 before filtering:
+total reads: 27434189
+total bases: 4115128350
+Q20 bases: 4077073187(99.0752%)
+Q30 bases: 3996803766(97.1246%)
+Q40 bases: 3996803766(97.1246%)
+
+Read1 after filtering:
+total reads: 27236853
+total bases: 2585646330
+Q20 bases: 2574491537(99.5686%)
+Q30 bases: 2532922555(97.9609%)
+Q40 bases: 2532922555(97.9609%)
+
+Read2 after filtering:
+total reads: 27236853
+total bases: 2585928433
+Q20 bases: 2574613258(99.5624%)
+Q30 bases: 2536907248(98.1043%)
+Q40 bases: 2536907248(98.1043%)
+
+Filtering result:
+reads passed filter: 54473706
+reads failed due to low quality: 260044
+reads failed due to too many N: 20588
+reads failed due to too short: 113722
+reads failed due to adapter dimer: 318
+reads with adapter trimmed: 40310253
+bases trimmed due to adapters: 2381409595
+
+Duplication rate: 3.77236%
+
+Insert size peak (evaluated by paired-end reads): 57
+
+JSON report: ../02.TrimmedData/V3_fastp.json
+HTML report: ../02.TrimmedData/V3_fastp.html
+
+fastp -i V3_R1.fq.gz -I V3_R2.fq.gz -o ../02.TrimmedData/V3_trim_R1.fastq.gz -O ../02.TrimmedData/V3_trim_R2.fastq.gz --detect_adapter_for_pe -w 8 -t 6 -h ../02.TrimmedData/V3_fastp.html -j ../02.TrimmedData/V3_fastp.json 
+fastp v1.3.1, time used: 88 seconds
+(atac_env) animaldevelopment@AnimalnoMac-Pro 01.RawData % 
+  [Restored Jun 20, 2026 14:28:23]
+Last login: Sat Jun 20 14:28:14 on console
+(base) animaldevelopment@AnimalnoMac-Pro 01.RawData % ls
+D1_R1.fq.gz					D2_R2_fastqc.zip				V1_R1.fq.gz					V2_R2_fastqc.zip
+D1_R1_fastqc.html				D2_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz	V1_R1_fastqc.html				V2_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz
+D1_R1_fastqc.zip				D2_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz	V1_R1_fastqc.zip				V2_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz
+D1_R2.fq.gz					D2_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz	V1_R2.fq.gz					V2_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz
+D1_R2_fastqc.html				D2_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz	V1_R2_fastqc.html				V2_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz
+D1_R2_fastqc.zip				D3_R1.fq.gz					V1_R2_fastqc.zip				V3_R1.fq.gz
+D1_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz	D3_R1_fastqc.html				V1_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz	V3_R1_fastqc.html
+D1_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz	D3_R1_fastqc.zip				V1_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz	V3_R1_fastqc.zip
+D1_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz	D3_R2.fq.gz					V1_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz	V3_R2.fq.gz
+D1_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz	D3_R2_fastqc.html				V1_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz	V3_R2_fastqc.html
+D2_R1.fq.gz					D3_R2_fastqc.zip				V2_R1.fq.gz					V3_R2_fastqc.zip
+D2_R1_fastqc.html				D3_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz	V2_R1_fastqc.html				V3_RKDL260001021-1A_23HCCNLT3_L2_1.fq.gz
+D2_R1_fastqc.zip				D3_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz	V2_R1_fastqc.zip				V3_RKDL260001021-1A_23HCCNLT3_L2_2.fq.gz
+D2_R2.fq.gz					D3_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz	V2_R2.fq.gz					V3_RKDL260001021-1A_23NCTFLT4_L7_1.fq.gz
+D2_R2_fastqc.html				D3_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz	V2_R2_fastqc.html				V3_RKDL260001021-1A_23NCTFLT4_L7_2.fq.gz
+(base) animaldevelopment@AnimalnoMac-Pro 01.RawData % ls ../02.TrimmedData 
+D1_fastp.html		D1_trim_R2.fastq.gz	D2_trim_R1.fastq.gz	D3_fastp.json		V1_fastp.html		V1_trim_R2.fastq.gz	V2_trim_R1.fastq.gz	V3_fastp.json
+D1_fastp.json		D2_fastp.html		D2_trim_R2.fastq.gz	D3_trim_R1.fastq.gz	V1_fastp.json		V2_fastp.html		V2_trim_R2.fastq.gz	V3_trim_R1.fastq.gz
+D1_trim_R1.fastq.gz	D2_fastp.json		D3_fastp.html		D3_trim_R2.fastq.gz	V1_trim_R1.fastq.gz	V2_fastp.json		V3_fastp.html		V3_trim_R2.fastq.gz
+(base) animaldevelopment@AnimalnoMac-Pro 01.RawData % 
