@@ -12,6 +12,22 @@ sudo apt-get install -y samtools​
 mkdir -p ../04.AlignedData
 mkdir -p ../04.AlignedData/logs
 
+#file name check!
+
+cd 02.TrimmedData
+
+bowtie2 -p 6 \
+  --very-sensitive \
+  --no-mixed --no-discordant \
+  -x ../03.ReferenceGenomes/Chicken_idx \
+  -1 D1_trim_R1.fastq.gz \
+  -2 D1_trim_R2.fastq.gz \
+  2> ../04.AlignedData/logs/D1.log | \
+samtools sort -@ 4 -m 768M \
+  -o ../04.AlignedData/D1.sorted.bam -
+
+samtools index ../04.AlignedData/D1.sorted.bam
+
 echo ">>> Chicken mapping start"
 
 for r1 in C*_trim_R1.fastq.gz
@@ -32,6 +48,12 @@ do
 
   echo "Done $prefix"
 done
+
+
+
+
+--emu--
+
 
 
 echo ">>> Emu mapping start"
@@ -57,6 +79,14 @@ done
 
 echo ">>> ALL SAMPLES MAPPED AND INDEXED! CHEERS!"
 '
+
+
+
+
+
+
+
+
 
 
 
