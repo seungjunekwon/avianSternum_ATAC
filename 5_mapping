@@ -1,0 +1,135 @@
+# remove unneeded files for storage! storage check + allocate more for Ubuntu? + check storage for Ubuntu?
+
+# make '04.AlignedData'
+
+# post-trim FastQC checked?
+
+# one-by-one mapping! NO 'for'
+
+sudo apt-get update -y​
+
+sudo apt-get install -y samtools​
+
+(atac_env) animaldevelopment@AnimalnoMac-Pro 02.TrimmedData % ls C*_trim_R1.fastq.gz | head
+C21_trim_R1.fastq.gz
+C22_trim_R1.fastq.gz
+C23_trim_R1.fastq.gz
+C31_trim_R1.fastq.gz
+C32_trim_R1.fastq.gz
+C33_trim_R1.fastq.gz
+(atac_env) animaldevelopment@AnimalnoMac-Pro 02.TrimmedData % >....             
+echo ">>> Emu mapping start"
+
+for r1 in E*_trim_R1.fastq.gz
+do
+  r2="${r1/_trim_R1.fastq.gz/_trim_R2.fastq.gz}"
+  prefix="${r1/_trim_R1.fastq.gz/}"
+
+  echo "Processing Emu: $prefix"
+
+  bowtie2 -p 6 \
+    --very-sensitive \
+    --no-mixed --no-discordant \
+    -x ../03.ReferenceGenomes/E_idx \
+    -1 "$r1" -2 "$r2" 2> "../04.AlignedData/logs/${prefix}.log" | \
+  samtools sort -@ 6 -m 1G -o "../04.AlignedData/${prefix}.sorted.bam" -
+
+  samtools index "../04.AlignedData/${prefix}.sorted.bam"
+
+  echo "Done $prefix"
+done
+
+echo ">>> ALL SAMPLES MAPPED AND INDEXED! CHEERS!"
+'
+>>> Chicken mapping start
+Processing Chicken: C21
+
+--
+
+(atac_env) animaldevelopment@AnimalnoMac-Pro 02.TrimmedData % ls C*_trim_R1.fastq.gz | head
+C21_trim_R1.fastq.gz
+C22_trim_R1.fastq.gz
+C23_trim_R1.fastq.gz
+C31_trim_R1.fastq.gz
+C32_trim_R1.fastq.gz
+C33_trim_R1.fastq.gz
+(atac_env) animaldevelopment@AnimalnoMac-Pro 02.TrimmedData % >....             
+echo ">>> Emu mapping start"
+
+for r1 in E*_trim_R1.fastq.gz
+do
+  r2="${r1/_trim_R1.fastq.gz/_trim_R2.fastq.gz}"
+  prefix="${r1/_trim_R1.fastq.gz/}"
+
+  echo "Processing Emu: $prefix"
+
+  bowtie2 -p 6 \
+    --very-sensitive \
+    --no-mixed --no-discordant \
+    -x ../03.ReferenceGenomes/E_idx \
+    -1 "$r1" -2 "$r2" 2> "../04.AlignedData/logs/${prefix}.log" | \
+  samtools sort -@ 6 -m 1G -o "../04.AlignedData/${prefix}.sorted.bam" -
+
+  samtools index "../04.AlignedData/${prefix}.sorted.bam"
+
+  echo "Done $prefix"
+done
+
+echo ">>> ALL SAMPLES MAPPED AND INDEXED! CHEERS!"
+'
+>>> Chicken mapping start
+Processing Chicken: C21
+
+--
+
+caffeinate -dimsu bash -c '
+
+# make folder
+mkdir -p ../04.AlignedData
+mkdir -p ../04.AlignedData/logs
+
+echo ">>> Chicken mapping start"
+
+for r1 in C*_trim_R1.fastq.gz
+do
+  r2="${r1/_trim_R1.fastq.gz/_trim_R2.fastq.gz}"
+  prefix="${r1/_trim_R1.fastq.gz/}"
+
+  echo "Processing Chicken: $prefix"
+
+  bowtie2 -p 6 \
+    --very-sensitive \
+    --no-mixed --no-discordant \
+    -x ../03.ReferenceGenomes/Chicken_idx \
+    -1 "$r1" -2 "$r2" 2> "../04.AlignedData/logs/${prefix}.log" | \
+  samtools sort -@ 6 -m 1G -o "../04.AlignedData/${prefix}.sorted.bam" -
+
+  samtools index "../04.AlignedData/${prefix}.sorted.bam"
+
+  echo "Done $prefix"
+done
+
+
+echo ">>> Emu mapping start"
+
+for r1 in E*_trim_R1.fastq.gz
+do
+  r2="${r1/_trim_R1.fastq.gz/_trim_R2.fastq.gz}"
+  prefix="${r1/_trim_R1.fastq.gz/}"
+
+  echo "Processing Emu: $prefix"
+
+  bowtie2 -p 6 \
+    --very-sensitive \
+    --no-mixed --no-discordant \
+    -x ../03.ReferenceGenomes/E_idx \
+    -1 "$r1" -2 "$r2" 2> "../04.AlignedData/logs/${prefix}.log" | \
+  samtools sort -@ 6 -m 1G -o "../04.AlignedData/${prefix}.sorted.bam" -
+
+  samtools index "../04.AlignedData/${prefix}.sorted.bam"
+
+  echo "Done $prefix"
+done
+
+echo ">>> ALL SAMPLES MAPPED AND INDEXED! CHEERS!"
+'
