@@ -1,0 +1,74 @@
+# ubuntu 'History'? > all command & RESULTS?
+
+# index all?
+
+# bam & bai all put. fastq all to HDD?
+
+# reboot?
+
+# alignment rates? last time: C21.log:93.10% overall alignment rate C22.log:93.91% overall alignment rate C23.log:95.04% overall alignment rate C31.log:93.36% overall alignment rate C32.log:94.49% overall alignment rate C33.log:92.87% overall alignment rate E21.log:91.80% overall alignment rate E22.log:91.15% overall alignment rate E23.log:91.25% overall alignment rate E31.log:92.42% overall alignment rate E32.log:93.65% overall alignment rate E33.log:95.25% overall alignment rate
+
+cd ../04.AlignedData/logs
+grep "overall alignment rate" *.log
+
+#picard
+
+#actual command i used:
+
+caffeinate -dimsu bash -c '
+set -e  # stop when ERROR
+
+mkdir -p ../05.CleanData/metrics
+mkdir -p ../05.CleanData/tmp
+
+echo ">>> CLEAN pipeline start"
+
+for bam in *.sorted.bam
+do
+  prefix="${bam/.sorted.bam/}"
+  echo "----------------------------------------"
+  echo "Processing: $prefix"
+
+  # 1. Add Fake Read Group
+  picard AddOrReplaceReadGroups \
+    I="$bam" \
+    O="../05.CleanData/${prefix}.rg.bam" \
+    RGID="$prefix" RGLB=lib1 RGPL=illumina RGPU=unit1 RGSM="$prefix" \
+    VALIDATION_STRINGENCY=SILENT
+
+  # 2. remove duplicates (32GB)
+  picard -Xmx32g MarkDuplicates \
+    I="../05.CleanData/${prefix}.rg.bam" \
+    O="../05.CleanData/${prefix}.dedup.bam" \
+    M="../05.CleanData/metrics/${prefix}.dup_metrics.txt" \
+    REMOVE_DUPLICATES=true \
+    VALIDATION_STRINGENCY=SILENT
+
+  # 3. Make index for idxstats
+  samtools index "../05.CleanData/${prefix}.dedup.bam"
+
+  # 4. MT remove + sorting (10 threads; 3G RAM per core: for safety)
+  samtools idxstats "../05.CleanData/${prefix}.dedup.bam" \
+  | cut -f1 \
+  | grep -v -w "MT" \
+  | xargs samtools view -@ 10 -b "../05.CleanData/${prefix}.dedup.bam" \
+  | samtools sort -@ 10 -m 3G -T "../05.CleanData/tmp/${prefix}_sort_tmp" -o "../05.CleanData/${prefix}.clean.bam" -
+
+  # 5. final BAM index
+  samtools index "../05.CleanData/${prefix}.clean.bam"
+
+
+##???
+  # 6. intermediate files delete
+  rm "../05.CleanData/${prefix}.rg.bam"
+  rm "../05.CleanData/${prefix}.dedup.bam"
+  rm "../05.CleanData/${prefix}.dedup.bam.bai"
+##???
+  echo "Done $prefix"
+done
+
+# remove temp folder
+rm -rf ../05.CleanData/tmp
+
+echo ">>> ALL CLEAN DONE"
+'
