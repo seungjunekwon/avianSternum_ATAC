@@ -1,5 +1,15 @@
 # ubuntu 'History'? > all command & RESULTS?
 
-#index all?
+# index all?
 
 # bam & bai all put. fastq all to HDD?
+
+# reboot?
+
+# alignment rates? last time: C21.log:93.10% overall alignment rate C22.log:93.91% overall alignment rate C23.log:95.04% overall alignment rate C31.log:93.36% overall alignment rate C32.log:94.49% overall alignment rate C33.log:92.87% overall alignment rate E21.log:91.80% overall alignment rate E22.log:91.15% overall alignment rate E23.log:91.25% overall alignment rate E31.log:92.42% overall alignment rate E32.log:93.65% overall alignment rate E33.log:95.25% overall alignment rate
+
+cd ../04.AlignedData/logs
+grep "overall alignment rate" *.log
+
+picard
+
