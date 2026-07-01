@@ -1,0 +1,22 @@
+### Quality Control (QC) 1: Duplication rate check
+
+# check duplication rates from /05.CleanData/metrics/[Sample_name]dup_metrics.txt
+# inside the txt file, look for '## METRICS CLASS' >> 'PERCENT_DUPLICATION' : {for example '0.315145': about 32%; 20~35% = OK?}
+# maybe just copy-paste or upload the '[Sample_name]dup_metrics.txt' to AI and check overall results
+
+
+### QC 2: Insert Size Distribution
+
+mkdir -p metrics
+samples="C21 C22 C23 C31 C32 C33 E21 E22 E23 E31 E32 E33"
+
+# 4 samples parallel; ADJUST based on the Windows PC Ubuntu!
+echo $samples | tr ' ' '\n' | parallel -j 4 '
+  sample={}
+  echo "Rendering Insert Size Metrics for ${sample}..."
+  picard CollectInsertSizeMetrics \
+    I=${sample}.clean.bam \
+    O=metrics/${sample}.insert_size_metrics.txt \
+    H=metrics/${sample}.insert_size_histogram.pdf \
+    M=0.5
+'
